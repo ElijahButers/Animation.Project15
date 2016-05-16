@@ -23,6 +23,9 @@
                                     <constraint firstAttribute="width" constant="44" id="7be-8W-ALB"/>
                                 </constraints>
                                 <state key="normal" title="Tap"/>
+                                <connections>
+                                    <action selector="tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGS-bl-2hi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -32,6 +35,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0cR-wU-HqL" secondAttribute="bottom" constant="12" id="mUk-68-Nis"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tap" destination="0cR-wU-HqL" id="Wry-4M-SOc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
