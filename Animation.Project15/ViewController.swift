@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tap: UIButton!
     
+    var imageView: UIImageView!
+    var currentAnimation = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
