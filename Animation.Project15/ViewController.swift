@@ -29,6 +29,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tapped(sender: AnyObject) {
+        
+        currentAnimation += 1
+        
+        if currentAnimation > 7 {
+            currentAnimation = 0
+        }
     }
 
 }
