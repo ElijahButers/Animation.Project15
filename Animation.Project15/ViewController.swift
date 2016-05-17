@@ -35,6 +35,8 @@ class ViewController: UIViewController {
             switch self.currentAnimation {
             case 0:
                 self.imageView.transform = CGAffineTransformMakeScale(2, 2)
+            case 1:
+                self.imageView.transform = CGAffineTransformIdentity
             default:
                 break
             }
