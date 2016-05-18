@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     @IBAction func tapped(sender: AnyObject) {
         tap.hidden = true
         
-        UIView.animateWithDuration(1, delay: 0, options: [], animations: { [unowned self] in
+         UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: [], animations: { [unowned self] in
             switch self.currentAnimation {
             case 0:
                 self.imageView.transform = CGAffineTransformMakeScale(2, 2)
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
                 self.imageView.backgroundColor = UIColor.greenColor()
             case 7:
                 self.imageView.alpha = 1
-                self.imageView.backgroundColor = UIColor.clearColor()                
+                self.imageView.backgroundColor = UIColor.clearColor()
             default:
                 break
             }
